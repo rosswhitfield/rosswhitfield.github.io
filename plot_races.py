@@ -23,10 +23,11 @@ for race_type in data['distances']:
         pace.append(p)
         text.append("{}".format(race['name']))
         p2 = p*1.609
-        hovertext.append("{}<br>pace: {}m{}s/km ({}m{}s/mi)<br>position: {}/{}".format(race['name'],
-                                                                                       int(p), int((p % 1)*60),
-                                                                                       int(p2), int((p2 % 1)*60),
-                                                                                       race['position'], race['participants']))
+        hovertext.append("{}<br>date: {}<br>pace: {}m{}s/km ({}m{}s/mi)<br>position: {}/{}".format(race['name'],
+                                                                                                   race['date'],
+                                                                                                   int(p), int((p % 1)*60),
+                                                                                                   int(p2), int((p2 % 1)*60),
+                                                                                                   race['position'], race['participants']))
     traces.append(go.Scatter(
         x=date,
         y=pace,
@@ -34,8 +35,15 @@ for race_type in data['distances']:
         text=text,
         hovertext=hovertext,
         hoverinfo="text",
-        name=race_type
+        name=race_type,
+        marker=dict(size=15),
+        textposition='middle right'
     ))
+
+# Move one text position to left
+textposition = ['middle right']*len(traces[1].get('x'))
+textposition[6] = 'middle left'
+traces[1].textposition = textposition
 
 layout = go.Layout(title='Races',
                    hovermode='closest',
