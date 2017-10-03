@@ -18,16 +18,17 @@ for race_type in data['distances']:
             continue
         date.append(race['date'])
         time = [int(x) for x in race['chip_time'].split(':')]
-        time = time[0]*60 + time[1] + time[2]/60
+        time = (time[0]*60 + time[1])*60 + time[2]
         p = time/data['distances'][race['type']]
-        pace.append(p)
-        text.append("{}".format(race['name']))
-        p2 = p*1.609
-        hovertext.append("{}<br>date: {}<br>pace: {}m{}s/km ({}m{}s/mi)<br>position: {}/{}".format(race['name'],
-                                                                                                   race['date'],
-                                                                                                   int(p), int((p % 1)*60),
-                                                                                                   int(p2), int((p2 % 1)*60),
-                                                                                                   race['position'], race['participants']))
+        pace.append(p/60)
+        p2 = round(p*1.609)
+        p = round(p)
+        text.append('<a href="{url}">{name}</a>'.format(**race))
+        hovertext.append("{name}<br>date: {date}<br>"
+                         "pace: {0}m{1:02d}s/km ({2}m{3:02d}s/mi)<br>"
+                         "position: {position}/{participants}".format(int(p/60), p % 60,
+                                                                      int(p2/60), p2 % 60,
+                                                                      **race))
     traces.append(go.Scatter(
         x=date,
         y=pace,
@@ -36,7 +37,7 @@ for race_type in data['distances']:
         hovertext=hovertext,
         hoverinfo="text",
         name=race_type,
-        marker=dict(size=15),
+        marker=dict(size=20),
         textposition='middle right'
     ))
 
