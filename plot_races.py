@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import json
 from plotly.offline import plot
 import plotly.graph_objs as go
@@ -37,13 +39,18 @@ for race_type in data['distances']:
     ))
 
 layout = go.Layout(title='Races',
+                   hovermode= 'closest',
                    xaxis=dict(
                        title='Date',
                        range=['2014-01-01', '2018-01-01']
                    ),
                    yaxis=dict(
                        title='Pace (min/km)',
-                       range=[5, 3.5]
+                       range=[5, 3.5],
+                       gridwidth = 5,
+                       tickmode="array",
+                       tickvals=[3.5, 3.6667, 3.8333, 4, 4.1667, 4.3333, 4.5, 4.6667, 4.8333, 5],
+                       ticktext=['3m30s','3m40s','3m50s','4m00s','4m10s','4m20s','4m30s','4m40s','4m50s','5m00s']
                    )
                    )
 
