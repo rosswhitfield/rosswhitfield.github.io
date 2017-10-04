@@ -25,6 +25,7 @@ for race_type in data['distances']:
         p = round(p)
         text.append('<a href="{url}">{name}</a>'.format(**race))
         hovertext.append("{name}<br>date: {date}<br>"
+                         "time: {chip_time}<br>"
                          "pace: {0}m{1:02d}s/km ({2}m{3:02d}s/mi)<br>"
                          "position: {position}/{participants}".format(int(p/60), p % 60,
                                                                       int(p2/60), p2 % 60,
