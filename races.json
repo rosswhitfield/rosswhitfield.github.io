@@ -91,9 +91,18 @@
 	 "gun_time": "0:18:21",
 	 "position": 14,
 	 "participants": 736,
-	 "url": "http://ktc.org/Races/k2017-13c.htm"}
+	 "url": "http://ktc.org/Races/k2017-13c.htm"},
+	{"name": "CrossKnox 15K",
+	 "type": "15K",
+	 "date": "2017-10-08",
+	 "chip_time": "1:02:30",
+	 "gun_time": "1:02:31",
+	 "position": 13,
+	 "participants": 235,
+	 "url": "https://runsignup.com/Race/Results/?raceId=11840&customResultsPageId=18588&segmentId=141472&row=12"}
     ],
     "distances": {"marathon": 42.195,
 		  "half-marathon": 21.0975,
-		  "5K": 5}
+		  "5K": 5,
+		  "15K": 15}
 }
