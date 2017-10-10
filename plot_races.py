@@ -51,7 +51,8 @@ layout = go.Layout(title='Races',
                    hovermode='closest',
                    xaxis=dict(
                        title='Date',
-                       range=['2014-01-01', '2018-01-01']
+                       range=['2014-01-01', '2019-01-01'],
+                       showgrid=False
                    ),
                    yaxis=dict(
                        title='Pace (min:sec/km)',
@@ -72,7 +73,53 @@ layout = go.Layout(title='Races',
                        side='right',
                        overlaying='y',
                        gridcolor='#ede'
-                   )
+                   ),
+                   shapes=[
+                       {
+                           'type': 'rect',
+                           'xref': 'x',
+                           'yref': 'paper',
+                           'x0': '2014-01-01',
+                           'y0': 0,
+                           'x1': '2014-12-31',
+                           'y1': 1,
+                           'fillcolor': '#d3d3d3',
+                           'opacity': 0.2,
+                           'line': {
+                               'width': 0,
+                           }
+                       },
+                       {
+                           'type': 'rect',
+                           'xref': 'x',
+                           'yref': 'paper',
+                           'x0': '2016-01-01',
+                           'y0': 0,
+                           'x1': '2016-12-31',
+                           'y1': 1,
+                           'fillcolor': '#d3d3d3',
+                           'opacity': 0.2,
+                           'line': {
+                               'width': 0,
+                           }
+                       },
+                       {
+                           'type': 'rect',
+                           'xref': 'x',
+                           'yref': 'paper',
+                           'x0': '2018-01-01',
+                           'y0': 0,
+                           'x1': '2018-12-31',
+                           'y1': 1,
+                           'fillcolor': '#d3d3d3',
+                           'opacity': 0.2,
+                           'line': {
+                               'width': 0,
+                           }
+                       }
+                   ],
+                   legend=dict(
+                       orientation="h")
                    )
 
 fig = go.Figure(data=traces, layout=layout)
