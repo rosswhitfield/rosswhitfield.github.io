@@ -23,7 +23,7 @@ for race_type in data['distances']:
         pace.append(p/60)
         p2 = round(p*1.609)
         p = round(p)
-        text.append('<a href="{url}">{name}</a>'.format(**race))
+        text.append('<a href="{url}">{name}</a> (<a href="{strava}">strava</a>)'.format(**race))
         hovertext.append("{name}<br>date: {date}<br>"
                          "time: {chip_time}<br>"
                          "pace: {0}m{1:02d}s/km ({2}m{3:02d}s/mi)<br>"
