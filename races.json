@@ -112,7 +112,16 @@
 	 "position": 13,
 	 "participants": 235,
 	 "url": "https://runsignup.com/Race/Results/11840/IndividualResult/PStq?#U4921771",
-	 "strava": "https://www.strava.com/activities/1221002359"}
+	 "strava": "https://www.strava.com/activities/1221002359"},
+	{"name": "Farragut 13.1",
+	 "type": "half-marathon",
+	 "date": "2017-10-28",
+	 "chip_time": "1:28:07",
+	 "gun_time": "1:28:07",
+	 "position": 10,
+	 "participants": 395,
+	 "url": "https://runsignup.com/Race/Results/8416/IndividualResult/kMRM?#U4921771",
+	 "strava": "https://www.strava.com/activities/1250549717"}
     ],
     "distances": {"marathon": 42.195,
 		  "half-marathon": 21.0975,
