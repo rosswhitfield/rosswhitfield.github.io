@@ -46,6 +46,7 @@ for race_type in data['distances']:
 textposition = ['middle right']*len(traces[1].get('x'))
 textposition[6] = 'middle left'
 traces[1].textposition = textposition
+traces[3].textposition = 'middle left'
 
 layout = go.Layout(title='Races',
                    hovermode='closest',
