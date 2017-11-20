@@ -121,7 +121,16 @@
 	 "position": 10,
 	 "participants": 395,
 	 "url": "https://runsignup.com/Race/Results/8416/IndividualResult/kMRM?#U4921771",
-	 "strava": "https://www.strava.com/activities/1250549717"}
+	 "strava": "https://www.strava.com/activities/1250549717"},
+	{"name": "Secret City Half Marathon",
+	 "type": "half-marathon",
+	 "date": "2017-11-18",
+	 "chip_time": "1:27:20",
+	 "gun_time": "1:27:22",
+	 "position": 7,
+	 "participants": 499,
+	 "url": "https://runsignup.com/Race/Results/16707/IndividualResult/kSRD?#U4921771",
+	 "strava": "https://www.strava.com/activities/1280592603"}
     ],
     "distances": {"marathon": 42.195,
 		  "half-marathon": 21.0975,
