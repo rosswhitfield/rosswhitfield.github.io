@@ -130,7 +130,16 @@
 	 "position": 7,
 	 "participants": 499,
 	 "url": "https://runsignup.com/Race/Results/16707/IndividualResult/kSRD?#U4921771",
-	 "strava": "https://www.strava.com/activities/1280592603"}
+	 "strava": "https://www.strava.com/activities/1280592603"},
+	{"name": "Strawberry Plains Half Marathon",
+	 "type": "half-marathon",
+	 "date": "2018-02-03",
+	 "chip_time": "1:23:32",
+	 "gun_time": "1:23:34",
+	 "position": 17,
+	 "participants": 188,
+	 "url": "https://runsignup.com/Race/Results/6154/IndividualResult/PYCR?remMeAttempt=#U4921771",
+	 "strava": "https://www.strava.com/activities/1389787849"}
     ],
     "distances": {"marathon": 42.195,
 		  "half-marathon": 21.0975,
