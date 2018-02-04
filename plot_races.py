@@ -42,6 +42,13 @@ for race_type in data['distances']:
         textposition='middle right'
     ))
 
+traces.append(go.Scatter(
+    x=[],
+    y=[],
+    name='empty data to make yaxis2 appear',
+    yaxis='y2'
+))
+
 # Move one text position to left
 textposition = ['middle right']*len(traces[1].get('x'))
 textposition[6] = 'middle left'
