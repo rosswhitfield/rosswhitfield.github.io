@@ -137,12 +137,22 @@
 	 "chip_time": "1:23:32",
 	 "gun_time": "1:23:34",
 	 "position": 17,
-	 "participants": 188,
+	 "participants": 349,
 	 "url": "https://runsignup.com/Race/Results/6154/IndividualResult/PYCR?remMeAttempt=#U4921771",
-	 "strava": "https://www.strava.com/activities/1389787849"}
+	 "strava": "https://www.strava.com/activities/1389787849"},
+	{"name": "Whitestone 30K",
+	 "type": "30K",
+	 "date": "2018-02-18",
+	 "chip_time": "2:08:36",
+	 "gun_time": "2:08:40",
+	 "position": 13,
+	 "participants": 124,
+	 "url": "https://runsignup.com/Race/Results/6155/IndividualResult/FQNt#U4921771",
+	 "strava": "https://www.strava.com/activities/1414370890"}
     ],
     "distances": {"marathon": 42.195,
 		  "half-marathon": 21.0975,
 		  "5K": 5,
-		  "15K": 15}
+		  "15K": 15,
+		  "30K": 30}
 }
