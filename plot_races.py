@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import json
 from plotly.offline import plot
 import plotly.graph_objs as go
@@ -59,7 +59,7 @@ layout = go.Layout(title='Races',
                    hovermode='closest',
                    xaxis=dict(
                        title='Date',
-                       range=['2014-01-01', '2019-01-01'],
+                       range=['2014-01-01', '2019-06-01'],
                        showgrid=False
                    ),
                    yaxis=dict(
