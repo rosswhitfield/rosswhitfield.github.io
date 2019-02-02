@@ -49,17 +49,11 @@ traces.append(go.Scatter(
     yaxis='y2'
 ))
 
-# Move one text position to left
-textposition = ['middle right']*len(traces[1].get('x'))
-textposition[6] = 'middle left'
-traces[1].textposition = textposition
-traces[3].textposition = 'middle left'
-
 layout = go.Layout(title='Races',
                    hovermode='closest',
                    xaxis=dict(
                        title='Date',
-                       range=['2014-01-01', '2019-06-01'],
+                       range=['2014-01-01', '2019-12-31'],
                        showgrid=False
                    ),
                    yaxis=dict(
