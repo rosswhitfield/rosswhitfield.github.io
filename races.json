@@ -227,7 +227,15 @@
 	 "position": 15,
 	 "participants": 419,
 	 "url": "http://ktc.org/Races/k2019-6c.htm",
-	 "strava": "https://www.strava.com/activities/2119681845"}
+	 "strava": "https://www.strava.com/activities/2119681845"},
+	{"name": "Carmel Marathon",
+	 "type": "marathon",
+	 "date": "2019-03-30",
+	 "chip_time": "2:54:27",
+	 "position": 15,
+	 "participants": 847,
+	 "url": "https://shar.es/amz1Hq",
+	 "strava": "https://www.strava.com/activities/2253204169"}
     ],
     "distances": {"marathon": 42.195,
 		  "half-marathon": 21.0975,
